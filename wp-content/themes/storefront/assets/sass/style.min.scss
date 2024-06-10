@@ -1,0 +1,203 @@
+@use "layout";
+@use "storefront";
+@use "boot";
+@use "fonts";
+@use "header";
+@use "scrollbar";
+@use "particle";
+@use "spinner";
+@use "aos";
+$themebasebg    : #0f1932;
+$baseColor      : white;
+$baseSbg        : #282f41;
+$headingGradWeb : -webkit-linear-gradient(top, #009688, #3db5aa, #009688);
+$headingGrad    : linear-gradient(top, #009688, #3db5aa, #009688);
+html, body{
+    min-height: 100% !important;
+    height: 100%;
+}
+body{
+    font-family: "hteaders";
+    background: $themebasebg;
+    overflow-x: hidden;
+    h1{
+        background             : $headingGradWeb;
+        background             : $headingGrad;
+        -webkit-background-clip: text;
+        background-clip        : text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        color                  : transparent;
+        font-size              : 2rem;
+    }
+    h2,h3,h4,h5,h6,p{
+        color: white;
+    }
+}
+p{
+    margin-top:1rem ;
+    margin-bottom:1rem ;
+}
+h2,h3,h4,h5,h6{
+    font-size: 1rem;
+    margin-top:1rem ;
+    margin-bottom:1rem ;
+}
+body.home{
+    // background: $themebasebg url("../images/shape-g.png");
+    // background-size: 50%;
+    // background-attachment: fixed;
+    header{
+        padding: 1rem;
+    }
+    .particle{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+        background-color:$themebasebg ;
+    }
+    p{
+        font-weight: lighter;
+    }
+    .orginal{
+        position: relative;
+        top: -3rem;
+        right: 0;
+        width: 100%;
+        z-index: 2;
+        background: url("../images/shape-g.png");
+        background-size: 50%;
+        background-attachment: fixed;
+        h1{
+            font-family: "hteaders";
+            font-weight: bolder;
+        }
+    }
+    header.active{
+        position: fixed;
+        width: 100%;
+        background-color: $baseSbg;
+
+    }
+
+    .custome-card{
+        display: block;
+        text-align: center;
+        padding: 30px;
+        border: 1px solid #3e4752c2;
+        height: 100%;
+        background: #0096881c;
+        border-radius: 50px 10px 50px 0px;
+        img{
+            width: 25%;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .our-product{
+        a{
+            text-decoration: none;
+        }
+      
+      
+    }
+    .globe-particles{
+        background: url("../images/globe-particle.png");
+        background-size: 100%;
+        background-position: top center;
+        a{
+            text-decoration: none;
+            display: block;
+        }
+
+    }
+    .blue{
+        background             : $headingGradWeb;
+        background             : $headingGrad;
+        -webkit-background-clip: text;
+        background-clip        : text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        color                  : transparent;
+    }
+    .time-line{
+        .number{
+            color: white;
+            position: relative;
+            margin: 2rem 0;
+        }
+        .number::after{
+            content: "";
+            width: 110%;
+            height: 2px;
+            position: absolute;
+            top: 2rem;
+            right: 0;
+            background-color: $baseColor;
+        }
+
+    }
+    .no-border{
+        text-decoration: none;
+    }
+    .bg-semidark{
+        background-color: #00000047;
+    }
+    .contact-text{
+        padding-top: 7px;
+        margin-top: -7.5px;
+        margin-bottom: -7.5px;
+        position: relative;
+        z-index: 2;
+        color: white;
+        li{
+            line-height: 3rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+footer{
+    ul{
+        font-weight: lighter;
+    }
+    padding: 5rem 0;
+    background: linear-gradient(to right, #282f41 0%, #202b47 100%) !important;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media(min-width:768px){
+    header{
+        width: 80%;
+        margin: auto;
+    }
+    .contactus{
+        min-height: 100vh;
+    }
+    body.home{
+        .orginal{
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 2;
+            background: url("../images/shape-g.png");
+            background-size: 50%;
+            background-attachment: fixed;
+            h1{
+                font-family: "hteaders";
+                font-weight: bolder;
+            }
+        }
+    }
+
+}

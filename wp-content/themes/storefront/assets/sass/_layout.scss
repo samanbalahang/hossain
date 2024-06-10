@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box !important;
+}
+[lang="fa-IR"]{
+    direction: rtl !important;
+}
+[lang*="en"]{
+    direction: ltr !important;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+.rtl{
+    direction: rtl !important;
+}
+.ltr{
+    direction: ltr !important;
+}
+p{
+    text-align: justify;
+}
+a:focus, button:focus, .button.alt:focus, input:focus, textarea:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus {
+    outline-color: transparent !important;
+    outline: 0 solid transparent !important;
+}
