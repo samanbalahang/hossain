@@ -10,6 +10,7 @@
 $themebasebg    : #0f1932;
 $baseColor      : white;
 $baseSbg        : #282f41;
+$greenColor      :#009688;
 $headingGradWeb : -webkit-linear-gradient(top, #009688, #3db5aa, #009688);
 $headingGrad    : linear-gradient(top, #009688, #3db5aa, #009688);
 html, body{
@@ -91,7 +92,7 @@ body.home{
         background: #0096881c;
         border-radius: 50px 10px 50px 0px;
         img{
-            width: 25%;
+            width: 100%;
         }
         p{
             text-align: center;
@@ -111,6 +112,8 @@ body.home{
         a{
             text-decoration: none;
             display: block;
+            min-height: 5rem;
+            text-align: center;
         }
 
     }
@@ -174,7 +177,29 @@ footer{
         color: white;
     }
 }
+.site-main{
+    h1,h2,h3,h4,h5,h6,p,a,ul{
+        color: $themebasebg !important;
+        padding: 1rem;
 
+    }
+    h1,h2,h3,h4,h5,h6{
+        text-align: center;
+    }
+    .custom-height{
+        min-height: 55rem;
+    }
+    .entry-content{
+        min-height: 29rem;
+    }
+    ul{
+        margin: 0;
+      
+        li{
+            text-align: justify;
+        }
+    }
+}
 @media(min-width:768px){
     header{
         width: 80%;

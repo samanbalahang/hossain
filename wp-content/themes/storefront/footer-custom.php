@@ -67,6 +67,9 @@
     <script src="<?= get_template_directory_uri()  ?>/assets/js/app.js"></script>
     <script src="<?= get_template_directory_uri()  ?>/assets/js/aos.js"></script>
     <script src="<?= get_template_directory_uri()  ?>/assets/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <?php wp_footer(); ?>
 </body>
 
