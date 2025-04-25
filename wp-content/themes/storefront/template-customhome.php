@@ -11,6 +11,12 @@
 get_header("custom"); ?>
 
 <body class="home">
+    <div id="loader">
+        <video muted id="video">
+            <source src="<?= get_template_directory_uri()  ?>/assets/media/loader.webm" type="video/webm">
+            <source src="<?= get_template_directory_uri()  ?>/assets/media/loader.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="particle">
         <div id="particles-js"></div>
     </div>
@@ -98,7 +104,7 @@ get_header("custom"); ?>
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="<?= get_site_url() ?>/category/wtrader/challenge" class="no-border">
+                        <a href="<?= get_site_url() ?>/category/challenge" class="no-border">
                             <span class="custome-card">
                                 <span class="d-flex w-100 flex-column justify-content-center align-items-center">
                                     <img src="<?= get_template_directory_uri()  ?>/assets/images/challenge.png" alt="challenge">
@@ -110,7 +116,7 @@ get_header("custom"); ?>
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="<?= get_site_url() ?>/category/wtrader/indicator" class="no-border">
+                        <a href="<?= get_site_url() ?>/category/indicator" class="no-border">
                             <span class="custome-card">
                                 <span class="d-flex w-100 flex-column justify-content-center align-items-center">
                                     <img src="<?= get_template_directory_uri()  ?>/assets/images/indicator.png" alt="indicator">
@@ -122,7 +128,7 @@ get_header("custom"); ?>
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="<?= get_site_url() ?>/category/wtrader/oscillator" class="no-border">
+                        <a href="<?= get_site_url() ?>/category/oscillator" class="no-border">
                             <span class="custome-card">
                                 <span class="d-flex w-100 flex-column justify-content-center align-items-center">
                                     <img src="<?= get_template_directory_uri()  ?>/assets/images/osilator.png" alt="osilator">
